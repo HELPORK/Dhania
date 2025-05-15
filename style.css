@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0)
+
+};
+
+.header{
+    min-height: 22px;
+    width: 200px;
+     display: inline-block;
+     color: white;
+     position:relative;
+ }
+ .header img{
+    display:block;
+ }
+.header ul{
+    display: flex;
+    padding: 2px 5px;
+    margin: auto;
+    cursor: pointer;
+}
+.header ul li{
+    display: flex;
+    padding: 20px 4px;
+    margin: 2px 14px;
+    color: white;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+
+.header ul li::after {
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: all 0.5s;
+}
+
+.header ul li:hover::after{
+  width: 100%;
+
+}
+
+.main{
+    height:550px;
+    width: auto;
+    filter:brightness(100%);
+
+}
+.main img{
+    height: 550px;
+    width: 100%;
+}
+.main:hover img{
+    filter:brightness(70%);
+}
+.main:hover{
+    cursor: pointer;
+}
+.main:hover h3{
+    margin-right: 50%;
+    position: relative;
+color: bisque;
+    bottom: 49%;
+    margin-left: 100px;
+    background-color: transparent;
+}
+.main p{
+    font: optional;
+}
+.main:hover p{
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: aliceblue;
+    bottom: 41%;
+    margin-right: 50%;
+    margin-left: 100px;
+    font-size: larger;
+    background-color: transparent;
+
+}
+.layer{
+    filter:brightness(50%);
+
+}
+.layer:hover{
+  filter:brightness(100%);
+}
+
+
+.many{
+    display: flexbox;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 0 0 0 15px;
+}
+
+.many img{
+    height: 365px;
+    width: auto;
+    display: inline-block;
+    border: 2px solid pink;
+    margin: 5px ;
+}
+.many img:hover{
+    box-shadow: 2px 2px 20px 5px white;
+    cursor: pointer;
+
+
+}
+.many .layer:hover h3{
+    position: relative;
+    background-color: transparent;
+    bottom: 49%;
+    margin-left: 100px;
+
+}
+.about{
+    color: white;
+    height: 300px;
+    width: 100%;
+    
+
+}
+
+.about .one{
+    float: left;
+    background-color: rgb(0, 0, 0);
+    height: 250px;
+    width: 400px;
+    border: 2px solid rgb(255, 25, 25);
+    margin-left: 15%;
+    
+}
+
+.about .two {
+    float: right;
+    background-color: rgb(0, 0, 0);
+    height: 250px;
+    width: 400px;
+    border: 2px solid rgb(255, 25, 25);
+    margin-right: 15%;
+}
+.about .two p{
+    height: 200px;
+    width: 300px;
+    align-items: center;
+    margin: 3px 40px;
+  
+ 
+}
+.about .two:hover,.one:hover{
+    box-shadow: 2px 2px 20px 5px white;
+    border:2.5px solid white;
+    cursor: pointer;
+}
+
+.about .one p{
+    height: 200px;
+    width: 300px;
+    align-items: center;
+    margin: 3px 40px;
+}
+
+.about .two h3{
+    margin: 2px 0 0 10px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.about .one h3{
+    margin: 2px 0 0 10px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.footer button{
+  background-color: transparent;
+  color:transparent;
+  font-size: 50px;
+  margin: 2px 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.footer:hover button{
+    color: #ffffff;
+    background-color:transparent;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+.footer h3{
+    background-color: transparent;
+    color: transparent;
+    margin: 31px 0  0 0px;
+}
+.footer:hover h3{
+    color: rgb(104, 255, 16);
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer{
+    margin: 100px auto;
+    width: 50%;
+  cursor: pointer;
+    background: transparent;
+    background-image: linear-gradient(rgba(34, 5, 5, 0.7),rgba(49, 49, 47, 0.7)),url(Screenshot_20240712-164241.png);
+    background-position: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.footer:hover {
+    box-shadow: 2px 2px 20px 5px white;
+}
+
+.contact{
+    color: rgb(238, 23, 23);
+    background-color: rgb(0, 0, 0);
+    height: 51px;
+    width: 100%;
+    display: inline-block;
+    font-size: 35px;
+    padding-left: 250px;
+   
+}
+.contact i{
+    align-items: center;
+    justify-content: center;
+    margin: 1px 50px;
+}
+.msg p{
+    align-items: center;
+    justify-content: center;
+background-color: white;
+color: rgb(255, 127, 127);
+}
